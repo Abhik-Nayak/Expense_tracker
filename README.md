@@ -1,7 +1,3 @@
-Sure! Here's a detailed and attractive **README** template for your **MERN Stack Expense Tracker App**:
-
----
-
 # Expense Tracker App (MERN Stack)
 
 Welcome to the **Expense Tracker App** built with the **MERN stack (MongoDB, Express, React, Node.js)**. This app allows users to securely register, log in, and track their expenses.
@@ -289,7 +285,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 This **MERN Stack Expense Tracker App** is a full-fledged application that allows users to track their expenses. With **authentication** using **JWT**, users can **add, view, update,** and **delete** their expenses. The **React frontend** provides a smooth user interface while the **Express backend** handles the logic and data management securely.
 
 If you encounter any issues, feel free to create an issue or contribute!
-
----
-
-Let me know if you need further customizations or adjustments!
