@@ -2,8 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./Models/db.js"; // Import the connectDB function from db.js
-import authRoutes from "./Routes/AuthRouts.js";
-import expenseRoutes from "./Routes/ExpenseRoute.js";
+import authRoutes from "./Routes/auth/authRoutes.js";
+import expenseRoutes from "./Routes/expenses/expenseRoutes.js";
 
 const app = express();
 // Load environment variables from .env file

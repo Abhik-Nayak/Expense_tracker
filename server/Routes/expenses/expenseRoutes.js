@@ -1,6 +1,6 @@
 import express from 'express';
-import { addExpense, getExpenses, updateExpense, deleteExpense } from '../Controllers/ExpenseController.js';
-import { protect } from '../Middlewares/AuthValidation.js'; // Protect middleware
+import { addExpense, getExpenses, updateExpense, deleteExpense } from '../../Controllers/ExpenseController.js';
+import { protect } from '../../Middlewares/AuthValidation.js'; // Protect middleware
 
 const router = express.Router();
 
