@@ -1,11 +1,12 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './Components/Navbar';
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/Navbar";
 
 // Lazy load components
-const Home = lazy(() => import('./Pages/Home'));
-const Login = lazy(() => import('./Pages/Login'));
-const Signup = lazy(() => import('./Pages/Signup'));
+const Home = lazy(() => import("./Pages/Home"));
+const Login = lazy(() => import("./Pages/Login"));
+const Signup = lazy(() => import("./Pages/Signup"));
+const Notefound = lazy(() => import("./Pages/Notfound"));
 
 const App = () => {
   return (
@@ -18,10 +19,11 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<Notefound />} />
         </Routes>
       </Suspense>
     </Router>
   );
-}
+};
 
 export default App;
