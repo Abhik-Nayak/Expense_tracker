@@ -7,6 +7,7 @@ const API_URL = "localhost:8080/api/auth";
 export const loginUser = createAsyncThunk(
   "auth/loginUser",
   async (userCredentials, { rejectWithValue }) => {
+    console.log("usercredentials",userCredentials)
     try {
       const response = await axios.post(`${API_URL}/login`, userCredentials);
       return response.data; // returns { token, user }
@@ -35,7 +36,7 @@ const authSlice = createSlice({
     user: null,
     token: null,
     loading: false,
-    error: null,
+    error: null
   },
   reducers: {
     logout(state) {
